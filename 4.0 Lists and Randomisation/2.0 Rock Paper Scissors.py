@@ -1,4 +1,5 @@
 import random
+
 rock_img = '''
     _______
 ---'   ____)
@@ -31,7 +32,6 @@ choices = ['rock', 'paper', 'scissors']
 computer_choice = random.choice(choices)
 user_name = input('Enter user name:\n')
 user_choice = input('Enter \nr for rock\np for paper\ns for scissors\n:')
-
 
 if user_choice.lower() == 'r':
     print(rock_img)
@@ -80,4 +80,3 @@ else:
     else:
         print(scissors_img)
         print('This is a tie')
-

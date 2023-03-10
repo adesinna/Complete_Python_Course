@@ -6,4 +6,3 @@ if coin == 0:
     print('Head')
 else:
     print('Tail')
-    

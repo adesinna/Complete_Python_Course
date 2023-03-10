@@ -4,7 +4,7 @@ num_1 = random.randint(1, 10)  # gives a random integer n in [a,b] any you run i
 
 print(num_1)
 
-num_2 = random.random() # gives a random float between [0, 1)
+num_2 = random.random()  # gives a random float between [0, 1)
 
 print(num_2)
 
@@ -34,5 +34,3 @@ print(list_3)
 list_4 = [list_1, list_3]
 
 print(list_4)
-
-
