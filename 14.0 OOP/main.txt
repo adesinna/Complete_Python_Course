@@ -1,0 +1,5 @@
+# OOP makes life easier, example instead of writing a function that will always check the mean of a list.
+# You can use the method  of the object to do that.
+
+# The class generate objects
+
