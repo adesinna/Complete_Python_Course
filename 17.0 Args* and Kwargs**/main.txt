@@ -1,0 +1,51 @@
+In Python, *args and **kwargs are used to pass a variable number of arguments to a function.
+
+*args (pronounced "star args") is used to pass a variable number of non-keyworded arguments to a function.
+When you prefix a parameter with * in a function definition, it allows that parameter to accept an arbitrary number of non-keyword arguments, which are then passed as a tuple to the function.
+
+For example:
+    def my_function(*args):
+    for arg in args:
+        print(arg)
+
+my_function('apple', 'banana', 'cherry')
+This will output:
+apple
+banana
+cherry
+
+
+**kwargs (pronounced "double star kwargs") is used to pass a variable number of keyworded arguments
+to a function. When you prefix a parameter with ** in a function definition, it allows that
+parameter to accept an arbitrary number of keyword arguments, which are then passed as a dictionary to
+the function.
+
+For example:
+
+    def my_function(**kwargs):
+    for key, value in kwargs.items():
+        print(key, value)
+
+my_function(first='apple', second='banana', third='cherry')
+
+Output:
+first apple
+second banana
+third cherry
+
+def my_function(*args, **kwargs):
+    for arg in args:
+        print(arg)
+    for key, value in kwargs.items():
+        print(key, value)
+
+my_function('apple', 'banana', 'cherry', first='apple', second='banana', third='cherry')
+
+Output:
+    apple
+banana
+cherry
+first apple
+second banana
+third cherry
+
