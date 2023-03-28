@@ -1,0 +1,4 @@
+Hello, my name is Adesina.
+Mode can be 'a', 'r', 'w' # append, read or write
+I am a King
+I am a King
