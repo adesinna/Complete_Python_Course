@@ -1,0 +1,71 @@
+Reading JSON in Python
+To read JSON data from a file, you can use the json module's load() function. Here is an example:
+
+
+import json
+
+# Open the file containing the JSON data
+
+with open('data.json', 'r') as f:
+    # Load the JSON data from the file
+    data = json.load(f)
+
+# Access the JSON data
+print(data)
+In the above code, data.json is the file name that contains the JSON data. The with statement ensures that the file is closed after the data is loaded.
+
+Writing JSON in Python
+To write JSON data to a file, you can use the json module's dump() function. Here is an example:
+
+
+import json
+
+# JSON data to be written to file
+data = {'name': 'John', 'age': 30, 'city': 'New York'}
+
+# Open a file for writing
+with open('data.json', 'w') as f:
+    # Write the JSON data to the file
+    json.dump(data, f)
+In the above code, data.json is the file name to which the JSON data is written.
+
+Appending JSON in Python
+To append JSON data to an existing file, you can first read the data from the file, update it, and then write it back to the file. Here is an example:
+
+
+
+import json
+
+# Open the file containing the JSON data
+with open('data.json', 'r') as f:
+    # Load the JSON data from the file
+    data = json.load(f)
+
+# Update the JSON data
+data['city'] = 'Chicago'
+
+# Open the file for writing (append mode)
+with open('data.json', 'a') as f:
+    # Write the updated JSON data to the file
+    json.dump(data, f)
+In the above code, data.json is the file name to which the JSON data is appended. Note that we open the file in append mode using the 'a' flag.
+
+Updating JSON in Python
+To update an existing JSON file, you can first read the data from the file, modify it, and then write it back to the file. Here is an example:
+
+
+import json
+
+# Open the file containing the JSON data
+with open('data.json', 'r') as f:
+    # Load the JSON data from the file
+    data = json.load(f)
+
+# Update the JSON data
+data['city'] = 'Chicago'
+
+# Open the file for writing (overwrite mode)
+with open('data.json', 'w') as f:
+    # Write the updated JSON data to the file
+    json.dump(data, f)
+In the above code, data.json is the file name to which the JSON data is updated. Note that we open the file in overwrite mode using the 'w' flag.

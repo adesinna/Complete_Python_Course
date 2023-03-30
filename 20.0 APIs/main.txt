@@ -1,0 +1,19 @@
+Application Programming Interfaces(APIs)
+
+I see them as a middle man between your application and external application, if the rule is followed
+you will be able to get your data.
+
+An API, or Application Programming Interface, is a set of protocols, routines, and tools for building software applications.
+It provides a standardized way for different software systems to interact and exchange information with each other.
+APIs define the rules and formats that must be followed to make requests and receive responses between software components
+or applications. APIs can be used to access and manipulate data, perform actions, and integrate with third-party systems,
+among other things. They are commonly used in web development, mobile applications, and other software projects to enable
+communication and integration between different systems.
+
+
+
+API Endpoint:
+    This is the location where the data is. For example the api where crypto data is stored is api.coinbase.com
+
+API Request:
+    This is the protocol required to exchange data.
